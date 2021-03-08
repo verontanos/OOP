@@ -7,10 +7,6 @@ class tollbooth{
 	int banyaknya_mobil;
 	int jumlah;
 	public:
-		tollbooth(){
-			banyaknya_mobil =0;
-			jumlah =0;
-		}
 		void mobil_berbayar(){
 			banyaknya_mobil++;
 			jumlah+=0.50;
