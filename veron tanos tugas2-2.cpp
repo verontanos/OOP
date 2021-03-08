@@ -4,7 +4,7 @@ using namespace std;
 char parkir();
 class tollbooth{
 	private:
-	unsigned int banyaknya_mobil;
+	int banyaknya_mobil;
 	int jumlah;
 	public:
 		tollbooth(){
@@ -27,21 +27,21 @@ int main(){
 	tollbooth booth;
 	char parkir1;
 	parkir1 = parkir();
-	while(parkir1!='c'){
+	while(parkir1!=1){
 	switch(parkir1){
-		case ('a'):
+		case 1
 		cout << "berbayar" << endl << endl;
 		booth.mobil_berbayar();
 		parkir1 = parkir();
 		break;
 		
-		case ('b'):
+		case 2:
 		cout << "tidak berbayar" << endl << endl;
 		booth.mobil_tidak_berbayar();
 		parkir1 = parkir();
 		break;
 		
-		case ('c'):
+		case 3:
 		cout << "result" << endl << endl;
 		break;
 		default:
